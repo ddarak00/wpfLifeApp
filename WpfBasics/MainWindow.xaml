@@ -1,0 +1,51 @@
+﻿<Window x:Class="WpfBasics.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfBasics"
+        mc:Ignorable="d"
+        Title="Dan's Menu" Height="80" Width="800">
+    <Border Padding="10">
+    <StackPanel>
+        <Grid>
+            <!--Button grid comment --> 
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width= "*"/>
+                <ColumnDefinition Width= "*"/>
+                <ColumnDefinition Width= "*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name ="phoneBookButton" Click ="PhoneBookButton_Click" Margin ="0 0 10 0 " Grid.Column ="0" Content="Phone Book" Height="20" VerticalAlignment="Top" />
+            <Button Grid.Column ="1" Content="Donations" Click="DonationButton_Click" />
+                <Button Grid.Column ="2" Content="Funny Quotes" Margin ="10 0 0 0 " Click="QuoteButton_Click" Height="20" VerticalAlignment="Top" />
+                <!--Button Margin ="10 0 0 0" Grid.Column ="2" Content="Refresh" /-->
+        </Grid>
+            <!--Padding inside, margin outside -->
+            <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width= "2*"/>
+                <ColumnDefinition Width= "*"/>
+            </Grid.ColumnDefinitions>
+            </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width= "2*"/>
+                        <ColumnDefinition Width= "*"/>
+                    </Grid.ColumnDefinitions>
+            </Grid>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width= "*"/>
+                    <ColumnDefinition Width= "*"/>
+                </Grid.ColumnDefinitions>
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width= "*"/>
+                    <ColumnDefinition Width= "*"/>
+                </Grid.ColumnDefinitions>
+            </Grid>
+        </StackPanel>
+    </Border>
+</Window>
